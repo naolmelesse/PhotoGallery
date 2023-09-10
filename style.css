@@ -5,7 +5,7 @@ body {
 .title {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 50px;
-  padding: 0em 5em 0.5em 0.2em;
+  text-align: left;
 }
 
 .navigation {
@@ -16,13 +16,20 @@ body {
   padding-top: 1.5em;
 }
 
-.main-section {
+#gallery {
+  width:1200px;
+  margin-left:30px;
+  margin: auto;
+  padding-bottom: 30px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  justify-content: center;
-  justify-items: center;
-  padding-left: 7%;
-  padding-right: 7%;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+#gallery img {
+  border-radius: 0.2rem;
+  height:150px;
+  width: 100%;
+  box-shadow:  0 1px 5px rgba(104, 104, 104, 0.8);
 }
 
 .card {
